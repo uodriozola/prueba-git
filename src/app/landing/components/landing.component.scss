@@ -1,0 +1,85 @@
+.page-login {
+    /*     background: url('./../images/industry_bck.jpg'); */
+    display: table;
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.login-container {
+    max-width: 420px;
+    margin: auto;
+    padding-top: 7%;
+}
+
+.login-content {
+    padding: 20px;
+    border-radius: 0 0 2px 2px;
+    box-sizing: border-box;
+}
+        
+.center {
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+    table-layout: fixed;
+}
+
+.card {
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
+	background: #FFFFFF;
+	color: #172b4d;
+}
+
+.card-content .card-title-desc {
+    line-height: 16px;
+    color: #ADADAD!important;
+}
+
+.vixion-primary-bck {
+    /* 	background-color: #311b92; */
+    background-color: #D81B60;
+    color: #FFFFFF;
+}
+
+#myVideo {
+    z-index:-200;
+    position:fixed;
+    right:0;
+    bottom:0;
+    min-width:100%;
+    min-height:100%
+}
+
+.vixion-logo {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+    opacity: 0.6;
+}
+
+#landing-title {
+    color: #fff;
+    font-weight: lighter;
+    margin: 0 10px;
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    font-family: Roboto;
+    font-size: 45px;
+    font-weight: 100;
+    text-align: center;
+    width: 100%;
+}

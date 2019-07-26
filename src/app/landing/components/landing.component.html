@@ -1,0 +1,40 @@
+<div class="page-login">
+    <video autoplay muted loop id="myVideo">
+        <source src="assets/images/landing_new.mp4" type="video/mp4">
+    </video>
+    <div class="vixion-logo"
+        style="background: url('assets/images/login-background.svg') 100% 20%/130% no-repeat #0d0046;">
+    </div>
+    <div id="landing-title">Welcome back to Vixion</div>
+    <div class="login-container" init-ripples>
+        <div class="center">
+            <div class="card bordered z-depth-2" style="margin:0% auto; max-width:300px; ">
+                <form id="loginForm" [formGroup]="loginForm" (ngSubmit)="login()">
+                    <div class="login-content">
+                        <div class="form-group">
+                            <label for="username">Email</label>
+                            <input id="username" type="text" class="form-control" formControlName="username" autofocus>
+                        </div>
+                        <div *ngIf="submitted && loginForm.controls.username.errors" class="alert alert-danger">
+                            <div *ngIf="loginForm.controls.username.errors.required">Email is required</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input id="password" type="password" formControlName="password">
+                        </div>
+                        <div *ngIf="submitted && loginForm.controls.password.errors" class="alert alert-danger">
+                            <div *ngIf="loginForm.controls.password.errors.required">Password is required</div>
+                        </div>
+                        <div *ngIf="error" id="alertInvalidLogin" style="padding: 7px;" class="alert alert-danger">
+                            {{error.error}}</div>
+                    </div>
+                    <div class="login-action clearfix">
+                        <div class="float-right">
+                            <button type="submit" class="btn vixion-primary-bck">Login</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
